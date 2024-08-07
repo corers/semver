@@ -3,7 +3,7 @@
 version = 3
 
 [[package]]
-name = "core-semver"
+name = "core_semver"
 version = "0.0.0"
 dependencies = [
  "semver",

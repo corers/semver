@@ -1,5 +1,5 @@
 [package]
-name = "core-semver"
+name = "core_semver"
 version = "0.0.0"
 edition = "2021"
 
