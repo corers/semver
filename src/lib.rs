@@ -64,7 +64,7 @@ impl Bump for Version {
     ///
     /// // default preid: beta
     /// let mut version = parse("1.2.3");
-    /// assert_eq!(version.bump_pre(None), "1.2.3-beta.1");
+    /// assert_eq!(version.bump_pre(None), "1.3.3-beta.1");
     ///
     /// // default pre value: 1
     /// version = parse("1.2.3-rc");
@@ -92,6 +92,7 @@ impl Bump for Version {
         }
 
         if self.pre.is_empty() {
+            self.minor += 1;
             self.pre = Prerelease::new(format!("{}.{}", current_preid, "1").as_str()).unwrap();
             return self.to_string();
         }
