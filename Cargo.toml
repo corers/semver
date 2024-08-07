@@ -1,6 +1,6 @@
 [package]
 name = "core_semver"
-version = "0.0.0"
+version = "0.1.0-beta.1"
 edition = "2021"
 description = "Cargo's flavor of Semantic Versioning"
 readme = "README.md"
