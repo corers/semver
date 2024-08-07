@@ -63,14 +63,14 @@ impl Bump for Version {
     /// use crate::core_semver::{parse,Bump};
     ///
     /// // default preid: beta
-    /// version = parse("1.2.3");
+    /// let mut version = parse("1.2.3");
     /// assert_eq!(version.bump_pre(None), "1.2.3-beta.1");
     ///
     /// // default pre value: 1
     /// version = parse("1.2.3-rc");
     /// assert_eq!(version.bump_pre(None), "1.2.3-rc.1");
     ///
-    /// let mut version = parse("1.2.3-beta.4");
+    /// version = parse("1.2.3-beta.4");
     /// assert_eq!(version.bump_pre(None), "1.2.3-beta.5");
     /// assert_eq!(version.bump_pre(Some("rc")), "1.2.3-rc.1");
     /// ```
