@@ -157,7 +157,7 @@ impl Bump for Version {
 /// assert_eq!(version.minor, 2);
 /// assert_eq!(version.patch, 3);
 /// assert_eq!(version.pre.as_str(), "beta.4");
-/// assert_eq!(version.to_string(), "1.2.3-beta.4")
+/// assert_eq!(version.to_string(), "1.2.3-beta.4");
 /// ```
 pub fn parse(str: &str) -> Version {
     Version::parse(str).unwrap()
